@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -48,6 +49,17 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+        <ul className="list-inside list-[square] text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+          <li className="">
+            <Link
+              href="/flickering-grid"
+              className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]"
+            >
+              Go to flickering grid
+            </Link>
+          </li>
+        </ul>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
