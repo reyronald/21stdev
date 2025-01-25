@@ -1,5 +1,6 @@
 import { FlickeringGrid } from "@/components/ui/flickering-grid";
-import Link from "next/link";
+import { ExternalLink } from "lucide-react";
+import { Link } from "next-view-transitions";
 
 export default function FlickeringPAge() {
   return (
@@ -16,7 +17,21 @@ export default function FlickeringPAge() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-[500px]">
         <h1 className="text-4xl font-bold">Hello</h1>
         <div className="relative h-[500px] rounded-lg w-full bg-background overflow-hidden border flex items-center justify-center">
-          <h2 className="text-3xl font-bold">World</h2>
+          <div className="text-center space-y-8">
+            <h2 className="text-3xl font-bold">World</h2>
+
+            <p>
+              <a
+                href="https://21st.dev/magicui/flickering-grid/default"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                https://21st.dev/magicui/flickering-grid/default
+                <ExternalLink className="inline-block ml-2" size={16} />
+              </a>
+            </p>
+          </div>
 
           <Link
             href="/"

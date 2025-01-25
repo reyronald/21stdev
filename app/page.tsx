@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 
 export default function Home() {
   return (
@@ -50,13 +50,15 @@ export default function Home() {
           </a>
         </div>
 
+        <h2 className="text-2xl font-bold">Demos</h2>
+
         <ul className="list-inside list-[square] text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="">
             <Link
               href="/flickering-grid"
               className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]"
             >
-              Go to flickering grid
+              Flickering grid
             </Link>
           </li>
         </ul>
