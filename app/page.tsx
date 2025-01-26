@@ -53,12 +53,21 @@ export default function Home() {
         <h2 className="text-2xl font-bold">Demos</h2>
 
         <ul className="list-inside list-[square] text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="">
+          <li>
             <Link
               href="/flickering-grid"
               className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]"
             >
               Flickering grid
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              href="/aurora-background"
+              className="text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]"
+            >
+              Aurora background
             </Link>
           </li>
         </ul>
